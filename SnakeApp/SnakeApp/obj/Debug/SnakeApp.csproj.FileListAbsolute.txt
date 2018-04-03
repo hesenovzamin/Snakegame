@@ -1,0 +1,10 @@
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.exe.config
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.exe
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.pdb
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csprojResolveAssemblyReference.cache
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.Form1.resources
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.Properties.Resources.resources
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.GenerateResource.Cache
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.CoreCompileInputs.cache
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.exe
+C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.pdb
