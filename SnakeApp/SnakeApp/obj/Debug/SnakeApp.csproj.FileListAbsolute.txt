@@ -8,3 +8,13 @@ C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.Gener
 C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.CoreCompileInputs.cache
 C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.exe
 C:\Users\P106\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.pdb
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.exe.config
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.exe
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\bin\Debug\SnakeApp.pdb
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csprojResolveAssemblyReference.cache
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.Form1.resources
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.Properties.Resources.resources
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.GenerateResource.Cache
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.exe
+C:\Users\User\Desktop\SnakeApp\SnakeApp\SnakeApp\obj\Debug\SnakeApp.pdb
