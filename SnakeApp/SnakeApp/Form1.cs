@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace SnakeApp
 {
@@ -20,8 +21,6 @@ namespace SnakeApp
         public Form1()
         {
             InitializeComponent();
-            this.Height = 10;
-            this.Width = 40;
             Meals();
             for (int i = 0; i < 6; i++)
             {
@@ -46,7 +45,6 @@ namespace SnakeApp
         {
             if (e.KeyCode==Keys.Right)
             {
-
                 for (int i = 0; i < SnakeLeght.Count - 1; i++)
                 {
                     SnakeLeght[i].Top = SnakeLeght[i + 1].Top;
@@ -254,8 +252,6 @@ namespace SnakeApp
             }
             
         }
-        void AddMeal()
-        {
-        }
+      
     }
 }
