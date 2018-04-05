@@ -13,6 +13,7 @@ namespace SnakeApp
 {
     public partial class Form1 : Form
     {
+        public SoundPlayer players = new SoundPlayer();
        public Timer TimerRight = new Timer();
         public Timer TimerLeft = new Timer();
         public Timer TimerUp = new Timer();
@@ -26,6 +27,7 @@ namespace SnakeApp
         public Form1()
         {
             InitializeComponent();
+            players.SoundLocation = "Snake.wav";
             TimerRight.Interval = 300;
             TimerRight.Tick += new System.EventHandler(this.TimerRight_Tick);
             TimerLeft.Interval = 300;
@@ -134,12 +136,13 @@ namespace SnakeApp
             if (SnakeLeght[SnakeLeght.Count - 1].Left > this.Width)
             {
                 int AB;
-                int AS = this.Width % 40;
-                AB = this.Width - AS;
-                SnakeLeght[SnakeLeght.Count - 1].Width = AB - 80;
+                int AS = this.Height % 40;
+                AB = this.Height - AS;
+                SnakeLeght[SnakeLeght.Count - 1].Left = 0;
             }
             if ((Snake.Top == Meal.Top) && (Snake.Left == Meal.Left))
             {
+                players.Play();
                 Snake = new Button();
                 Snake.Width = 40;
                 Snake.Height = 40;
@@ -159,6 +162,8 @@ namespace SnakeApp
                 {
                     MessageBox.Show("Lose");
                     this.Hide();
+                    TimerRight.Stop();
+             
                 }
             }
         }
@@ -178,8 +183,16 @@ namespace SnakeApp
                     item.Left -= 40;
                 }
             }
+            if (SnakeLeght[SnakeLeght.Count - 1].Left < 0)
+            {
+                int AB;
+                int AS = this.Width % 40;
+                AB = this.Width - AS;
+                SnakeLeght[SnakeLeght.Count - 1].Left = AB-40;
+            }
             if ((Snake.Top == Meal.Top) && (Snake.Left == Meal.Left))
             {
+                players.Play();
                 Snake = new Button();
                 Snake.Width = 40;
                 Snake.Height = 40;
@@ -198,7 +211,9 @@ namespace SnakeApp
                 if (SnakeLeght[SnakeLeght.Count - 1].Top == SnakeLeght[i].Top && SnakeLeght[SnakeLeght.Count - 1].Left == SnakeLeght[i].Left)
                 {
                     MessageBox.Show("Lose");
+             
                     this.Hide();
+                    TimerLeft.Stop();
                 }
             }
         }
@@ -223,10 +238,11 @@ namespace SnakeApp
                 int AB;
                 int AS = this.Height % 40;
                 AB = this.Height - AS;
-                SnakeLeght[SnakeLeght.Count - 1].Top = AB - 80;
+                SnakeLeght[SnakeLeght.Count - 1].Top = AB - 40;
             }
             if ((Snake.Top == Meal.Top) && (Snake.Left == Meal.Left))
             {
+                players.Play();
                 Snake = new Button();
                 Snake.Width = 40;
                 Snake.Height = 40;
@@ -246,6 +262,8 @@ namespace SnakeApp
                 {
                     MessageBox.Show("Lose");
                     this.Hide();
+        
+                    TimerUp.Stop();
                 }
             }
         }
@@ -265,16 +283,17 @@ namespace SnakeApp
                     item.Top += 40;
                 }
             }
-            if (SnakeLeght[SnakeLeght.Count - 1].Top > this.Height)
+            if (SnakeLeght[SnakeLeght.Count - 1].Top >this.Height)
             {
                 int AB;
                 int AS = this.Height % 40;
                 AB = this.Height - AS;
-                SnakeLeght[SnakeLeght.Count - 1].Top = 40;
+                SnakeLeght[SnakeLeght.Count - 1].Top = 0;
             }
 
             if ((Snake.Top == Meal.Top) && (Snake.Left == Meal.Left))
             {
+                players.Play();
                 Snake = new Button();
                 Snake.Width = 40;
                 Snake.Height = 40;
@@ -293,6 +312,7 @@ namespace SnakeApp
                 if (SnakeLeght[SnakeLeght.Count - 1].Top == SnakeLeght[i].Top && SnakeLeght[SnakeLeght.Count - 1].Left == SnakeLeght[i].Left)
                 {
                     MessageBox.Show("Lose");
+                    this.Hide();
 
                 }
             }
